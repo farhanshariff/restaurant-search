@@ -1,0 +1,34 @@
+<div class="container">
+  <img [src]="food.imageUrl" [alt]="food.name" />
+  <div class="details">
+    <div class="header">
+      <span class="name">
+        {{ food.name }}
+      </span>
+      <span class="favorite {{ food.favorite ? '' : 'not' }}"> ❤ </span>
+    </div>
+
+    <div class="location">
+      <span *ngFor="let loc of food.locations">
+        {{ loc }}
+      </span>
+    </div>
+
+    <div class="dishes">
+      <span *ngFor="let dish of food.dishesAvailable">
+        {{ dish }}
+      </span>
+    </div>
+
+    <div class="cook-time">
+      <span>
+        Average time taken by this restaurant is
+        {{ food.averageCookTime }}
+      </span>
+    </div>
+
+    <div class="price">
+      <span>{{ food.averagePrice | currency: "INR":"symbol" }}</span>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,18 @@
+div {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+div a {
+  background-color: #ffa500;
+  padding: 0.3rem 1rem;
+  margin: 0.2rem 0.15rem;
+  border-radius: 10rem;
+  color: #ffffff;
+}
+
+div a:hover {
+  background-color: #ffe1a8;
+  color: black;
+}

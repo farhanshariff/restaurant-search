@@ -1,0 +1,5 @@
+<div *ngIf="locations">
+  <a *ngFor="let loc of locations" routerLink="/location/{{ loc.name }}">
+    {{ loc.name }}({{ loc.count }})
+  </a>
+</div>
